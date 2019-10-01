@@ -6,8 +6,8 @@ pygame.init() # initialize pygame
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((626,601))
 
-bg = pygame.image.load("\\Users\jostr\Desktop\Race Game code and pictures\Background.png")
-topostrich= pygame.image.load("\\Users\jostr\Desktop\Race Game code and pictures\ostrich pics\frame_00_delay-0.04s.gif")
+bg = pygame.image.load("\Background.png")
+topostrich= pygame.image.load("\frame_00_delay-0.04s.gif")
 
 
 pygame.mouse.set_visible(1)
