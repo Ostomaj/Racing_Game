@@ -26,17 +26,17 @@ screen = pygame.display.set_mode((626, 601))  # Size of the background image.
 clock = pygame.time.Clock() #Create a clock
 
 #Ostrich Button
-Ostrichbutton = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Buttons/OstrichButton.png")
+Ostrichbutton = pygame.image.load("/RaceGameFiles/Buttons/OstrichButton.png")
 #Set the ostrich button
 Ostrichbutton = pygame.transform.scale(Ostrichbutton,(150,150))
 
 #Squirrel Button
-Squirrelbutton = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Buttons/SquirrelButton.png")
+Squirrelbutton = pygame.image.load("/RaceGameFiles/Buttons/SquirrelButton.png")
 #Set the squirrel Button
 Squirrelbutton = pygame.transform.scale(Squirrelbutton,(150,150))
 
 #Turtle Button
-Turtlebutton = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Buttons/TurtleButton.png")
+Turtlebutton = pygame.image.load("/RaceGameFiles/Buttons/TurtleButton.png")
 #Set the turtle button
 Turtlebutton = pygame.transform.scale(Turtlebutton,(150,150))
 
@@ -50,22 +50,22 @@ class TestSprite(pygame.sprite.Sprite):
     def __init__(self):
         super(TestSprite, self).__init__()
         self.images = []
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich1.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich2.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich3.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich4.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich5.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich6.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich7.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich8.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich9.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich10.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich11.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich12.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich13.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich14.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich15.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/ostrichpics/ostrich16.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich1.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich2.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich3.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich4.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich5.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich6.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich7.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich8.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich9.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich10.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich11.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich12.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich13.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich14.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich15.png"))
+        self.images.append(load_image("/RaceGameFiles/ostrichpics/ostrich16.png"))
 
         # assuming both images are 64x64 pixels
 
@@ -96,17 +96,17 @@ class TestSprite2(pygame.sprite.Sprite):
     def __init__(self):
         super(TestSprite2, self).__init__()
         self.images = []
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle1.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle2.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle3.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle4.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle5.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle6.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle7.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle8.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle9.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle10.png"))
-        self.images.append(load_image("/home/pi/Desktop/RACEGAME/RaceGameFiles/Turtlepics/Turtle11.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle1.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle2.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle3.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle4.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle5.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle6.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle7.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle8.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle9.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle10.png"))
+        self.images.append(load_image("/RaceGameFiles/Turtlepics/Turtle11.png"))
         self.index = 0
         self.image = self.images[self.index]
         self.rect = pygame.Rect(245, 492, 190, 200)
@@ -126,7 +126,7 @@ class TestSprite2(pygame.sprite.Sprite):
         self.image = self.images[self.index]
 
 #Load the background
-bg = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Background.jpg")
+bg = pygame.image.load("/RaceGameFiles/Background.jpg")
 #Define the main game
 def main():
     #Define the name on the banner
@@ -195,33 +195,33 @@ def main():
         my_group2.update()
         my_group2.draw(screen)
         while screenchange == 1:
-            bg2 = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Countdown/Large3.png")
+            bg2 = pygame.image.load("/RaceGameFiles/Countdown/Large3.png")
             bg2 = pygame.transform.scale(bg2,(630,626))
-            bg3 = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Countdown/Large2.jpg")
+            bg3 = pygame.image.load("/RaceGameFiles/Countdown/Large2.jpg")
             bg3 = pygame.transform.scale(bg3,(630,626))
-            bg4 = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Countdown/Large1.png")
+            bg4 = pygame.image.load("/RaceGameFiles/Countdown/Large1.png")
             bg4 = pygame.transform.scale(bg4,(630,626))
-            bg5 = pygame.image.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Countdown/LargeGo.png")
+            bg5 = pygame.image.load("/RaceGameFiles/Countdown/LargeGo.png")
             bg5 = pygame.transform.scale(bg5, (630, 626))
 
             screen = pygame.display.set_mode((626, 601))  # Size of the background image.
             pygame.mixer.init()
-            pygame.mixer.music.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Audio/Three.mp3")
+            pygame.mixer.music.load("/RaceGameFiles/Audio/Three.mp3")
             pygame.mixer.music.play()
             screen.blit(bg2,(0,0))  # Load background 3
             pygame.display.update()
             pygame.time.wait(1000)
-            pygame.mixer.music.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Audio/Two.mp3")
+            pygame.mixer.music.load("/RaceGameFiles/Audio/Two.mp3")
             pygame.mixer.music.play()
             screen.blit(bg3, (0,0)) # Load background 2
             pygame.display.update()
             pygame.time.wait(1000)
-            pygame.mixer.music.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Audio/One.mp3")
+            pygame.mixer.music.load("/RaceGameFiles/Audio/One.mp3")
             pygame.mixer.music.play()
             screen.blit(bg4,(0,0))  # Load background 1
             pygame.display.update()
             pygame.time.wait(850)
-            pygame.mixer.music.load("/home/pi/Desktop/RACEGAME/RaceGameFiles/Audio/Go.wav")
+            pygame.mixer.music.load("/RaceGameFiles/Audio/Go.wav")
             pygame.mixer.music.play()
             screen.blit(bg5, (0, 0))
             pygame.time.wait(850)
