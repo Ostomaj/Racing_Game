@@ -1,2 +1,2 @@
 # Racing_Game
-Racing game I made in Python for Led Lights. Loosely based off a game I saw at Liberty Science Center when I was young.
+Racing game created in Python for Led Lights. Loosely based off a game at Liberty Science Center in Jersey City, NJ.
